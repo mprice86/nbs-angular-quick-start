@@ -12,7 +12,7 @@ export interface Card {
 @Component({
   selector: 'nbs-cards',
   templateUrl: './nbs-cards.component.html',
-  styleUrls: ['./nbs-cards.component.scss']
+  styleUrls: ['./nbs-cards.component.scss'],
 })
 export class NbsCardsComponent implements OnInit {
   public cards: Card[] = [
@@ -65,6 +65,6 @@ export class NbsCardsComponent implements OnInit {
   }
 
   public deleteCard(event: Event) {
-    (<HTMLElement>event.target).remove();
+    (event.target as HTMLElement).remove();
   }
 }

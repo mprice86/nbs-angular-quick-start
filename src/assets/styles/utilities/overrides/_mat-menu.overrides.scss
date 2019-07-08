@@ -1,3 +1,5 @@
+// sass-lint:disable nesting-depth no-important
+
 .mat-menu-panel {
   border-radius: $nbs-border-radius;
 
@@ -43,7 +45,7 @@
           font-size: 1.25rem;
           line-height: 1.25rem;
           color: inherit;
-          
+
           + span {
             flex: 1 0 calc(100% - 1.3rem);
             font-size: 1rem;

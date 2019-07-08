@@ -26,10 +26,27 @@ import { NbsExampleDialogComponent } from './examples/nbs-modals/nbs-example-dia
     FormsModule,
     SharedModule,
   ],
-  declarations: [ AppComponent, NbsColoursComponent, NbsTypographyComponent, NbsFormsComponent, NbsButtonsComponent, NbsChipsComponent, NbsCardsComponent, NbsMenusComponent, NbsModalsComponent, NbsTooltipsComponent, NbsToastsComponent, NbsToolbarComponent, NbsSidebarComponent, NbsLayoutsComponent, NbsAnimationsComponent, NbsExampleDialogComponent, ],
+  declarations: [
+    AppComponent,
+    NbsColoursComponent,
+    NbsTypographyComponent,
+    NbsFormsComponent,
+    NbsButtonsComponent,
+    NbsChipsComponent,
+    NbsCardsComponent,
+    NbsMenusComponent,
+    NbsModalsComponent,
+    NbsTooltipsComponent,
+    NbsToastsComponent,
+    NbsToolbarComponent,
+    NbsSidebarComponent,
+    NbsLayoutsComponent,
+    NbsAnimationsComponent,
+    NbsExampleDialogComponent,
+  ],
   entryComponents: [
     NbsExampleDialogComponent,
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

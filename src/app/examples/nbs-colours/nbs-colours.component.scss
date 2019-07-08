@@ -14,7 +14,7 @@
   > span {
     font-size: 1.125rem;
     font-weight: 400;
-    
+
     &:nth-child(2) {
       flex: 1 0 auto;
     }
@@ -35,7 +35,7 @@
   border: $nbs-border;
 
   @media (max-width: $screen-mobile) {
-		width: 20px;
-		height: 20px;
-	}
+    width: 20px;
+    height: 20px;
+  }
 }
