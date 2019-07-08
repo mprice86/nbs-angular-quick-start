@@ -32,6 +32,7 @@ This basic app should provide all of the configuration, styles and components yo
 
 ## Requirements
 - Node 10+
+- Git
 
 ## Recommendations
 - Use Visual Studio Code with the following Extensions
