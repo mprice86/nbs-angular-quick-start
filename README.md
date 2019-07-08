@@ -40,6 +40,7 @@ This basic app should provide all of the configuration, styles and components yo
   - Debugger for Chrome
   - ESLint
   - NPM
+  - Editorconfig
   
 ## Getting started
 - Clone repository to your local machine
