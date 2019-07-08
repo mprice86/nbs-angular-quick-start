@@ -1,5 +1,7 @@
 @import '../../../assets/styles/utilities/_utilities-styles.collection';
 
+// sass-lint:disable nesting-depth
+
 :host {
   @include tab-setup;
 }
@@ -11,7 +13,7 @@ article {
 .card-grid {
   display: flex;
   flex-flow: row wrap;
-  
+
   mat-card {
     &.mat-card {
       flex: 1 0 20%;

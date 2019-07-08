@@ -1,3 +1,5 @@
+// sass-lint:disable nesting-depth no-important
+
 // TODO: I don't like this but there appears to be a bug
 // with either Stackblitz's setup or this version of Angular
 // which positions all dialogs on the left.
@@ -49,7 +51,7 @@ mat-dialog-container {
 
     .mat-dialog-title {
       font-size: 1rem;
-      
+
       h1 {
         line-height: 2rem;
         margin: 0 0 .5rem;

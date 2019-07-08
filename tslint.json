@@ -1,6 +1,0 @@
-{
-  "extends": ["tslint-config-nbs"],
-  "rules": {
-    "deprecation": { "severity": "warning" }
-  }
-}
