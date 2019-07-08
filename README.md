@@ -39,3 +39,9 @@ This basic app should provide all of the configuration, styles and components yo
   - Debugger for Chrome
   - ESLint
   - NPM
+  
+## Getting started
+- Clone repository to your local machine
+- Run command 'npm install' (you can probably go make a cup of tea at this point)
+- Run 'ng serve'
+- Open 'http://localhost:4200/'
