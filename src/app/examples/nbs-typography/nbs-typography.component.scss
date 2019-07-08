@@ -1,4 +1,4 @@
-@import "../../../assets/styles/utilities/_utilities-styles.collection";
+@import '../../../assets/styles/utilities/_utilities-styles.collection';
 
 :host {
   @include tab-setup;
@@ -13,7 +13,7 @@
 
   span {
     display: block;
-    font-size: 0.875rem;
+    font-size: .875rem;
     color: $nbs-grey-dark;
     margin: 0;
     line-height: 1.25rem;

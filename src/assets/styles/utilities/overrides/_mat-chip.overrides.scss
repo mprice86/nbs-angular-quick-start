@@ -1,3 +1,5 @@
+// sass-lint:disable nesting-depth
+
 mat-chip {
   &.mat-chip {
     height: auto;
@@ -9,12 +11,14 @@ mat-chip {
       &.mat-primary,
       &.mat-accent {
         mat-icon {
-          &.mat-icon.mat-chip-remove {
-            width: .875rem;
-            height: .875rem;
-            font-size: .875rem;
-            line-height: .875rem;
-            opacity: 1;
+          &.mat-icon {
+            &.mat-chip-remove {
+              width: .875rem;
+              height: .875rem;
+              font-size: .875rem;
+              line-height: .875rem;
+              opacity: 1;
+            }
           }
         }
       }

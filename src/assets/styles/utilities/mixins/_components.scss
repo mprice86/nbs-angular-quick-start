@@ -29,15 +29,15 @@
   }
 }
 
-@mixin custom-tooltip($color, $backgroundColor, $className) {
+@mixin custom-tooltip($color, $background-color, $class-name) {
   mat-tooltip-component {
-    #{className} {
+    #{class-name} {
       .mat-tooltip {
         padding: 1rem;
         font-size: .875rem;
         line-height: 1.25rem;
         color: $color;
-        background-color: $backgroundColor;
+        background-color: $background-color;
       }
     }
   }
