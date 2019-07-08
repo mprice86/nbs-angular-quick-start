@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, DialogPosition } from '@angular/material/dialog';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NbsExampleDialogComponent, ExampleDialogData } from './nbs-example-dialog/nbs-example-dialog.component';
