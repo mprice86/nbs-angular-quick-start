@@ -2,10 +2,12 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
+    "baseUrl": "",
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "noStrictGenericChecks": true
   },
   "files": [
     "test.ts",

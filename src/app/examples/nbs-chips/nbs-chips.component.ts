@@ -9,24 +9,24 @@ export interface UniclassCode {
 @Component({
   selector: 'nbs-chips',
   templateUrl: './nbs-chips.component.html',
-  styleUrls: ['./nbs-chips.component.scss']
+  styleUrls: ['./nbs-chips.component.scss'],
 })
 export class NbsChipsComponent {
   private codes: UniclassCode[] = [
-    {code: 'Pr_40_30_84_69'},
-    {code: 'Pr_40_30_04_50'},
-    {code: 'Pr_40_30_22_46'}
+    { code: 'Pr_40_30_84_69' },
+    { code: 'Pr_40_30_04_50' },
+    { code: 'Pr_40_30_22_46' },
   ];
   public addOnBlur = true;
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
 
   add(event: MatChipInputEvent): void {
-    const input = event.input;
-    const value = event.value;
+    const { input } = event;
+    const { value } = event;
 
     // Add our fruit
     if ((value || '').trim()) {
-      this.codes.push({code: value.trim()});
+      this.codes.push({ code: value.trim() });
     }
 
     // Reset the input value
@@ -42,5 +42,4 @@ export class NbsChipsComponent {
       this.codes.splice(index, 1);
     }
   }
-
 }

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'nbs-forms',
   templateUrl: './nbs-forms.component.html',
-  styleUrls: ['./nbs-forms.component.scss']
+  styleUrls: ['./nbs-forms.component.scss'],
 })
 export class NbsFormsComponent {
   public formGroup: FormGroup;
