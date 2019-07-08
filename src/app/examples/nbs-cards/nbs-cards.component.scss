@@ -1,0 +1,26 @@
+@import '../../../assets/styles/utilities/_utilities-styles.collection';
+
+:host {
+  @include tab-setup;
+}
+
+article {
+  margin: 3rem 0;
+}
+
+.card-grid {
+  display: flex;
+  flex-flow: row wrap;
+  
+  mat-card {
+    &.mat-card {
+      flex: 1 0 20%;
+      margin: .5rem;
+      max-width: calc(25% - 2rem);
+
+      .mat-icon {
+        fill: $nbs-grey-dark;
+      }
+    }
+  }
+}

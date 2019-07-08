@@ -1,0 +1,36 @@
+mat-card {
+  &.mat-card {
+    display: flex;
+    flex-flow: column;
+    min-width: $screen-mobile / 2;
+    padding: 1rem;
+
+    .mat-card-image {
+      display: block;
+      width: calc(100% + 2rem);
+      height: 10rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .mat-card-title {
+      font-size: 1.25rem;
+      font-weight: $medium;
+    }
+
+    .mat-card-subtitle,
+    .mat-card-content {
+      font-size: .875rem;
+      line-height: 1.25em;
+    }
+
+    .mat-card-footer {
+      margin: auto 0 0;
+    }
+
+    &:not([class*='mat-elevation-z']) {
+      box-shadow: none;
+      border: $nbs-border;
+    }
+  }
+}

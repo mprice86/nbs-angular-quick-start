@@ -1,0 +1,19 @@
+snack-bar-container {
+  &.mat-snack-bar-container {
+    background: $nbs-brand-secondary;
+  }
+}
+
+simple-snack-bar {
+  &.mat-simple-snackbar {
+    color: $white;
+
+    button {
+      font-size: .875rem;
+      padding: .75em 1em;
+      background: darken($nbs-brand-secondary, 10%);
+      color: $white;
+      margin-left: 1rem;
+    }
+  }
+}

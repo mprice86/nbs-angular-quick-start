@@ -1,0 +1,53 @@
+@import '~@angular/material/theming';
+@import 'nbs-colour.theme';
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+// $nbs-colour-map-brand-secondary: map_get($nbs-map-brand-secondary, 500);
+// $nbs-colour-map-cta-primary: map_get($nbs-map-cta-primary, 500);
+// $nbs-colour-map-cta-secondary: map_get($nbs-map-cta-secondary, 500);
+// $nbs-colour-map-add-failure: map_get($nbs-map-add-failure, 500);
+
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$nbs-brand-secondary-palette: mat-palette($nbs-map-brand-secondary);
+$nbs-cta-primary-palette: mat-palette($nbs-map-cta-primary);
+$nbs-cta-secondary-palette: mat-palette($nbs-map-cta-secondary);
+$nbs-add-failure-palette: mat-palette($nbs-map-add-failure);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$nbs-theme-brand-secondary: mat-light-theme($nbs-brand-secondary-palette, $nbs-cta-primary-palette, $nbs-add-failure-palette);
+$nbs-theme-cta-primary: mat-light-theme($nbs-cta-primary-palette, $nbs-cta-secondary-palette, $nbs-add-failure-palette);
+$nbs-theme-cta-secondary: mat-light-theme($nbs-cta-secondary-palette, $nbs-cta-primary-palette, $nbs-add-failure-palette);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($nbs-theme-brand-secondary);
+@include mat-tabs-theme($nbs-theme-cta-primary);
+@include mat-form-field-theme($nbs-theme-cta-primary);
+@include mat-select-theme($nbs-theme-cta-primary);
+@include mat-chips-theme($nbs-theme-brand-secondary);
+@include mat-button-theme($nbs-theme-cta-primary);
+@include mat-checkbox-theme($nbs-theme-cta-secondary);
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels. 
+$nbs-typography: mat-typography-config(
+  $font-family: $nbs-font,
+
+  // we can optionally customise the font-size, line-height and font-weight of various component 'levels'
+  $headline: mat-typography-level(1.75rem, 1.5em, 600),
+  $title: mat-typography-level(1.25rem, 1.5em, 400),
+  $subheading-2: mat-typography-level(1.125rem, 1.5em, 400),
+  $subheading-1: mat-typography-level(1rem, 1.5em, 600),
+  $body-2: mat-typography-level(1rem, 1.5em, 400),
+  $body-1: mat-typography-level(1rem, 1.5em, 400),
+  $caption: mat-typography-level(.875rem, 1.25em, 400),
+  $button: mat-typography-level(1rem, 1rem, 400)
+);
+
+@include angular-material-typography($nbs-typography);

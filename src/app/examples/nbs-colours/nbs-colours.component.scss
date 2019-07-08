@@ -1,0 +1,41 @@
+@import '../../../assets/styles/utilities/_utilities-styles.collection';
+
+:host {
+  @include tab-setup;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: $screen-mobile;
+  margin: 1rem 0;
+
+  > span {
+    font-size: 1.125rem;
+    font-weight: 400;
+    
+    &:nth-child(2) {
+      flex: 1 0 auto;
+    }
+
+    &:not(:last-child) {
+      margin: 0 2rem 0 0;
+    }
+  }
+}
+
+.colour-blob {
+  display: block;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  margin: 0 2rem 0 0;
+  border-radius: 50%;
+  border: $nbs-border;
+
+  @media (max-width: $screen-mobile) {
+		width: 20px;
+		height: 20px;
+	}
+}

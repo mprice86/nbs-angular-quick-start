@@ -1,0 +1,140 @@
+<section class="constrain">
+	<h2 class="medium">Button styles</h2>
+	<p>
+    A &lt;button&gt; element should be used whenever an action is performed.
+  </p>
+  <p>
+    &lt;button&gt; elements sit in the tab order of the page and can be activated with the 'space' or
+    'enter' keys. With elements that appear in the tab order the user's browser will provide an 'outline' effect to
+    highlight its position on the page, this is an accessibility feature and should not be disabled.
+  </p>
+
+  <h3 class="medium">Angular Material buttons</h3>
+  <p>
+    The Angular theme file nbs-material.theme in combination with the mat-button.overrides file sets up the styles needed
+    for buttons in your app.
+  </p>
+
+  <h3 class="medium">Implementation</h3>
+  <p>
+    You declare a button by using the &lt;button&gt; tag and adding the 'mat-raised-button' directive. Set its style
+    by adding the class 'mat-primary' or 'mat-secondary'. Or disable it with the 'disabled' attribute.
+  </p>
+
+  <h3 class="medium">When to use</h3>
+  <p>
+    Primary buttons should be used to perform the primary action in a given context, e.g. submitting a form or advancing
+    to the next step in a process.
+  </p>
+  <p>
+    Secondary buttons should be used to perform the secondary action in any given context, for example cancelling an
+    action. They should generally be positioned to the left of the primary action with a 1rem margin between the two
+    buttons.
+  </p>
+  <p>
+    Buttons should be disabled when the user cannot perform the action for which it is used. For example, if a form
+    hasn't been filled in, the button to submit it should be disabled.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of buttons, see the <a href="https://material.angular.io/components/button/overview">Angular Material button article</a>.
+  </p>
+  <p>
+    For more information on the Material Design principles of buttons see the <a href="https://material.io/design/components/buttons.html">Material Design button article</a>
+  </p>
+</section>
+
+<section class="button-examples constrain">
+  <article>
+    <h3 class="medium">Primary call to action</h3>
+    <button mat-raised-button class="mat-primary">
+      <span>Primary</span>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Secondary call to action</h3>
+    <button mat-raised-button class="mat-accent">
+      <span>Secondary</span>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Disabled button</h3>
+	  <button mat-raised-button disabled class="mat-primary">
+      <span>Disabled</span>
+    </button>
+  </article>
+  
+  <article>
+    <h3 class="medium">Primary call to action with icon</h3>
+    <button mat-raised-button class="mat-primary">
+      <span>Primary</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Secondary call to action with icon</h3>
+    <button mat-raised-button class="mat-accent">
+      <span>Secondary</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Disabled button with icon</h3>
+	  <button mat-raised-button disabled class="mat-primary">
+      <span>Disabled</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+</section>
+
+<section class="button-examples constrain">
+  <article>
+    <h3 class="medium">Primary call to action small</h3>
+    <button mat-raised-button class="mat-primary cta-small">
+      <span>Primary small</span>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Secondary call to action small</h3>
+    <button mat-raised-button class="mat-accent cta-small">
+      <span>Secondary small</span>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Disabled button small</h3>
+    <button mat-raised-button class="mat-primary cta-small" disabled>
+      <span>Disabled small</span>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Primary call to action small with icon</h3>
+    <button mat-raised-button class="mat-primary cta-small">
+      <span>Primary small</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Secondary call to action small with icon</h3>
+    <button mat-raised-button class="mat-accent cta-small">
+      <span>Secondary small</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+
+  <article>
+    <h3 class="medium">Disabled button small with icon</h3>
+    <button mat-raised-button class="mat-primary cta-small" disabled>
+      <span>Disabled small</span>
+      <mat-icon svgIcon="fal:check-circle"></mat-icon>
+    </button>
+  </article>
+</section>

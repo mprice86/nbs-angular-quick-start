@@ -1,0 +1,61 @@
+.mat-menu-panel {
+  border-radius: $nbs-border-radius;
+
+  .mat-menu-content {
+    &:not(:empty) {
+      padding: 0;
+
+      .menu-title,
+      .menu-footer {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        border-bottom: $nbs-border;
+      }
+
+      .menu-title {
+        font-weight: 400;
+        background: $nbs-grey-40;
+      }
+    }
+
+    button {
+      &.mat-menu-item {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 1rem;
+        width: 100%;
+
+        &:hover,
+        &:focus {
+          &:not([disabled]) {
+            background-color: fade-out($nbs-utility-grey, .5);
+          }
+        }
+
+        .mat-icon {
+          position: relative;
+          flex: 0 0 1.25rem;
+          width: 1.25rem;
+          height: 1.25rem;
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          color: inherit;
+          
+          + span {
+            flex: 1 0 calc(100% - 1.3rem);
+            font-size: 1rem;
+            font-weight: 400;
+            vertical-align: baseline;
+          }
+
+          &:not([color]) {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

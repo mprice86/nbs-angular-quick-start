@@ -1,0 +1,46 @@
+<section class="constrain">
+	<h2 class="medium">Material tooltips</h2>
+	<p>
+		Tooltips display informative text when users hover over, focus on, or tap an element
+	</p>
+
+	<h3 class="medium">Principles</h3>
+	<p>
+		<strong>Transient - </strong>Tooltips appear on hover, focus, or touch, and disappear after a short duration.
+  </p>
+  <p>
+    <strong>Paired - </strong>Tooltips are always paired nearby the element with which they are associated.
+  </p>
+  <p>
+    <strong>Succinct - </strong>Tooltips only include short, descriptive text.
+  </p>
+
+  <h3 class="medium">Provided code</h3>
+  <p>
+    The mat-tooltip.overrides file included in this app sets up all your tooltips to have the look and feel desired by the UX team.
+    Any further changes to the presentation of Material tooltips should be made in this file.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of tooltips, see the <a href="https://material.angular.io/components/tooltip/overview">Angular Material tooltip article</a>.
+  </p>
+  <p>
+    For more information on the Material Design principles of tooltips see the <a href="https://material.io/design/components/tooltips.html">Material Design tooltip article</a>
+  </p>
+</section>
+
+<section>
+  <article>
+    <h3 class="medium">Button with tooltip</h3>
+    <button class="mat-primary cta-small" mat-raised-button matTooltip="Some information about the button action">Hover me!</button>
+  </article>
+
+  <article>
+    <h3 class="medium">Button with tooltip positioned to the right</h3>
+    <button class="mat-primary cta-small"
+            mat-raised-button
+            matTooltip="Some information about the button action"
+            matTooltipPosition="right">Hover me!</button>
+  </article>
+</section>

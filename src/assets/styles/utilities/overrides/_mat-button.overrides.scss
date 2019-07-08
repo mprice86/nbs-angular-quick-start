@@ -1,0 +1,78 @@
+button {
+  font-family: $nbs-font;
+
+  &.mat-raised-button {
+    transition: box-shadow ease $speed-fast;
+    box-shadow: none;
+
+    &:not([class*='mat-elevation-z']) {
+      box-shadow: 0 0 .5rem 0 fade-out($black, 1);
+    }
+
+    &:not([disabled]) {
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 .5rem 0 fade-out($black, .6);
+      }
+    }
+  }
+
+  &.mat-button,
+  &.mat-raised-button {
+    font-size: 1rem;
+    line-height: 1em;
+    padding: 1em 1.5em;
+    min-width: 0;
+
+    .mat-icon {
+      font-size: 1em;
+      line-height: 1em;
+      width: 1.25em;
+      height: 1.25em;
+      margin: -.125em 0 -.125em .5em;
+    }
+
+    &.cta-small {
+      font-size: .875rem;
+      padding: .75em 1em;
+
+      .mat-icon {
+        width: 1em;
+        height: 1em;
+        margin: -.0625em 0 -.0625em .5rem;
+      }
+    }
+
+    &[disabled] {
+      color: fade-out($nbs-text-primary, .5) !important;
+      background-color: $nbs-utility-grey !important;
+    }
+
+    &[ng-reflect-menu] {
+      .mat-icon {
+        width: 1.5em;
+        height: 1.5em;
+        margin: -.25em 0;
+      }
+    }
+
+    &.icon-button {
+      padding: 1em;
+
+      .mat-icon {
+        margin-left: 0;
+
+        + span {
+          margin-left: .5em;
+        }
+      }
+    }
+  }
+
+  .mat-button-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

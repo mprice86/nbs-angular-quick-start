@@ -1,0 +1,57 @@
+<section class="constrain">
+  <h2 class="medium">
+    Menus
+  </h2>
+  <p>
+    Menus display a list of choices on temporary surfaces. They appear when users interact with a button, action, or other control.
+  </p>
+  <h3 class="medium">Principles</h3>
+  <p>
+    <strong>Nimble - </strong>Menus should be easy to open, close, and interact with.
+  </p>
+  <p>
+    <strong>Contextual - </strong>Menu content should be suited to user needs.
+  </p>
+  <p>
+    <strong>Scannable - </strong>Menu items should be easy to scan.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of menus see the <a href="https://material.angular.io/components/menu/overview">Angular Material menu article</a>
+  </p>
+  <p>
+    For more information on the Material Design principles of menus see the <a href="https://material.io/design/components/menus.html">Material Design menu article</a>
+  </p>
+</section>
+
+<section class="menu-examples">
+  <article>
+    <button mat-raised-button [matMenuTriggerFor]="menu" class="mat-primary">
+      Open menu
+    </button>
+  </article>
+
+  <article>
+    <button mat-raised-button [matMenuTriggerFor]="menuWithIcons" class="mat-primary">
+      Open menu with icons
+      <mat-icon svgIcon="fal:ellipsis-v"></mat-icon>
+    </button>
+  </article>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+
+  <mat-menu #menuWithIcons="matMenu">
+    <button mat-menu-item>
+      <mat-icon svgIcon="fal:cloud-download"></mat-icon>
+      Item 1
+    </button>
+    <button mat-menu-item>
+      <mat-icon svgIcon="fal:trash-alt"></mat-icon>
+      Item 2
+    </button>
+  </mat-menu>
+</section>

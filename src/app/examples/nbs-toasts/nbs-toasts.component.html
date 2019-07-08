@@ -1,0 +1,45 @@
+<section class="constrain">
+  <h2 class="medium">Material toasts (snackbars)</h2>
+  <p>
+    Toasts, known in Angular as 'snackbars', provide brief messages about app processes at the bottom of the screen.
+  </p>
+
+  <h3 class="medium">Usage</h3>
+  <p>
+    Toasts inform users of a process that an app has performed or will perform. They appear temporarily, towards the
+    bottom of the screen. They shouldn't interrupt the user experience, and they don't require user input to
+    disappear.
+  </p>
+
+  <h3 class="medium">Principles</h3>
+  <p>
+    <strong>Informational - </strong>Toasts provide updates on an app's processes.
+  </p>
+  <p>
+    <strong>Temporary - </strong>Toasts appear temporarily, and disappear on their own, without requiring user input.
+  </p>
+  <p>
+    <strong>Contextual - </strong>Toasts are placed in the most suitable area of the UI.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of toasts, see the <a href="https://material.angular.io/components/snack-bar/overview">Angular Material snackbar article</a>.
+  </p>
+  <p>
+    For more information on the Material Design principles of toasts see the <a href="https://material.io/design/components/snackbars.html">Material Design snackbar article</a>
+  </p>
+</section>
+
+<section>
+  <h3 class="medium">Toasts triggered by buttons</h3>
+  <article>
+    <p>Toasts with no action should dismiss automatically.</p>
+    <button class="mat-primary" mat-raised-button (click)="openSnackBar('Example of toast opened by click event', '')">Show toast</button>
+  </article>
+
+  <article>
+    <p>Toasts with an action should wait for the user.</p>
+    <button class="mat-primary" mat-raised-button (click)="openSnackBar('Example of toast opened by click event', 'Hide')">Show toast</button>
+  </article>
+</section>

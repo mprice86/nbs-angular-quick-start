@@ -1,0 +1,52 @@
+<section class="constrain">
+  <h2 class="medium">Cards</h2>
+  <p>
+    Cards should contain content and actions about a single subject.
+  </p>
+  <p>
+    They should be easy to scan for relevant and actionable information. Elements, like text and images, 
+    should be placed on them in a way that clearly indicates hierarchy.
+  </p>
+
+  <h3 class="medium">Principles</h3>
+  <p>
+    <strong>Contained - </strong>A card is identifiable as a single, contained unit.
+  </p>
+  <p>
+    <strong>Independent - </strong>A card can stand alone, without relying on surrounding elements for context.
+  </p>
+  <p>
+    <strong>Individual - </strong>A card cannot merge with another card, or divide into multiple cards.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of cards see the <a href="https://material.angular.io/components/card/overview">Angular Material card article</a>
+  </p>
+  <p>
+    For more information on the Material Design principles of cards see the <a href="https://material.io/design/components/cards.html">Material Design card article</a>
+  </p>
+</section>
+
+<section class="card-grid">
+  <mat-card *ngFor="let card of cards">
+    <div mat-card-image [style.background-image]="'url(' + (card.imageUrl) + ')'"></div>
+
+    <mat-card-title>
+     {{ card.title }}
+    </mat-card-title>
+
+    <mat-card-subtitle>
+      {{ card.subTitle }}
+    </mat-card-subtitle>
+
+    <mat-card-content>
+      {{ card.content }}
+    </mat-card-content>
+
+    <mat-card-footer align="end">
+      <!-- Insert card actions here -->
+      <mat-icon svgIcon="fal:ellipsis-v"></mat-icon>
+    </mat-card-footer>
+  </mat-card>
+</section>

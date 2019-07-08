@@ -1,0 +1,44 @@
+@mixin component-setup {
+  position: relative;
+  display: block;
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: $screen-desktop-small;
+  margin: 0 auto 10rem;
+  padding: 0 2rem;
+
+  @media (max-width: $screen-tablet) {
+    padding: 0 1rem;
+  }
+}
+
+@mixin tab-setup {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding: 3rem 0;
+
+  > section {
+    min-width: 300px;
+    flex: 1 0 30%;
+
+    &.constrain {
+      max-width: $screen-mobile;
+      padding: 0 5rem 0 0;
+    }
+  }
+}
+
+@mixin custom-tooltip($color, $backgroundColor, $className) {
+  mat-tooltip-component {
+    #{className} {
+      .mat-tooltip {
+        padding: 1rem;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: $color;
+        background-color: $backgroundColor;
+      }
+    }
+  }
+}

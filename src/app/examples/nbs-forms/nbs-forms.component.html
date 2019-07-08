@@ -1,0 +1,130 @@
+<section class="constrain">
+	<h2 class="medium">Brand form field examples</h2>
+	<p>
+		Forms and the inputs they contain allow the user to enter text into the UI.
+	</p>
+	<p>
+		Our branded form inputs are a custom version of the Material Design Outline style inputs. These inputs have been written
+		to deliver specific styling and interaction set out in our UX Component documentation. If you adopt this style for your
+		site it should be applied across the board with all inputs following the style.
+	</p>
+	<p>
+		Form inputs are required to be wrapped in a containing element with the class 'form-control-wrapper'. Within the 'form-control-wrapper'
+		you should provide a label (where appropriate, see examples) and the material version of the form field you want to use.
+	</p>
+	<p>
+		The example provided shows the ideal spacing between form fields, as well as demonstrating how you could validate your form and provide
+    feedback to the user. 
+	</p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of forms, see the <a href="https://material.angular.io/components/form-field/overview">Angular Material form field article</a>.
+  </p>
+  <p>
+    For more information on the Material Design principles of form fields see the <a href="https://material.io/design/components/text-fields.html">Material Design text fields article</a>
+  </p>
+</section>
+
+<section>
+	<form [formGroup]="formGroup">
+		<div class="form-control-wrapper">
+			<label>Input</label>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Text input" formControlName="text" required>
+        <mat-error align="end" [hidden]="formGroup.controls['text'].pristine || formGroup.controls['text'].valid">
+          <ng-container *ngIf="formGroup.controls['text'].hasError('required') || formGroup.controls['text'].hasError('pattern')">
+            Text required (max 50 characters)
+          </ng-container>
+        </mat-error>
+        <mat-hint align="end">{{formGroup.controls['text'].value.length}} / 50</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="form-control-wrapper">
+			<mat-label>Input with icon</mat-label>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Text input" formControlName="textWithIcon">
+        <mat-icon matSuffix svgIcon="fal:search"></mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="form-control-wrapper">
+      <label>Select</label>
+      <mat-form-field appearance="outline">
+        <mat-select placeholder="Select" formControlName="select">
+          <mat-option value="Option one">
+            Option one
+          </mat-option>
+          <mat-option value="Option two">
+            Option two
+          </mat-option>
+          <mat-option value="Option three">
+            Option three
+          </mat-option>
+          <mat-option value="Option four">
+            Option four
+          </mat-option>
+          <mat-option value="Option five">
+            Option five
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="form-control-wrapper">
+      <label>Select multiple</label>
+      <mat-form-field appearance="outline">
+        <mat-select placeholder="Select" color="accent" formControlName="selectMultiple" multiple>
+          <mat-option value="Option one">
+            Option one
+          </mat-option>
+          <mat-option value="Option two">
+            Option two
+          </mat-option>
+          <mat-option value="Option three">
+            Option three
+          </mat-option>
+          <mat-option value="Option four">
+            Option four
+          </mat-option>
+          <mat-option value="Option five">
+            Option five
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="form-control-wrapper">
+      <label>Multi-line text input</label>
+      <mat-form-field appearance="outline">
+        <textarea matInput placeholder="Multi-line text input"  formControlName="textarea"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="form-control-wrapper">
+      <mat-slide-toggle formControlName="toggle">Slide toggle</mat-slide-toggle>
+    </div>
+
+    <div class="form-control-wrapper">
+      <mat-checkbox formControlName="checkbox">Checkbox</mat-checkbox>
+    </div>
+
+    <div class="form-control-wrapper">
+      <label>Radio button group</label>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Radio button 1</mat-radio-button>
+        <mat-radio-button value="2">Radio button 2</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <!-- 
+<div class="form-control-wrapper">
+  <label>Date picker</label>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div> -->
+  </form>
+</section>

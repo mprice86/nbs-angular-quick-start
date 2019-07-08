@@ -1,0 +1,89 @@
+@import '../utilities/_utilities-styles.collection';
+$nbs-map-brand-secondary: (
+  50: $white,
+  100: lighten($nbs-brand-secondary, 20%),
+  200: lighten($nbs-brand-secondary, 15%),
+  300: lighten($nbs-brand-secondary, 10%),
+  400: lighten($nbs-brand-secondary, 5%),
+  500: $nbs-brand-secondary,
+  600: darken($nbs-brand-secondary, 5%),
+  700: darken($nbs-brand-secondary, 10%),
+  800: darken($nbs-brand-secondary, 15%),
+  A200: #cdebf1,
+  A400: #51bacf,
+  A700: $nbs-brand-secondary,
+  contrast: (
+    500: $white,
+    600: $white,
+    700: $white,
+    800: $white,
+    900: $white,
+    A700: $white,
+  )
+);
+$nbs-map-cta-primary: (
+  50: $white,
+  100: lighten($nbs-cta-primary, 20%),
+  200: lighten($nbs-cta-primary, 15%),
+  300: lighten($nbs-cta-primary, 10%),
+  400: lighten($nbs-cta-primary, 5%),
+  500: $nbs-cta-primary,
+  600: darken($nbs-cta-primary, 5%),
+  700: darken($nbs-cta-primary, 10%),
+  800: darken($nbs-cta-primary, 15%),
+  A200: #cdebf1,
+  A400: #51bacf,
+  A700: $nbs-cta-primary,
+  contrast: (
+    500: $white,
+    600: $white,
+    700: $white,
+    800: $white,
+    900: $white,
+    A700: $white,
+  )
+);
+$nbs-map-cta-secondary: (
+  50: $white,
+  100: lighten($nbs-cta-secondary, 20%),
+  200: lighten($nbs-cta-secondary, 15%),
+  300: lighten($nbs-cta-secondary, 10%),
+  400: lighten($nbs-cta-secondary, 5%),
+  500: $nbs-cta-secondary,
+  600: darken($nbs-cta-secondary, 5%),
+  700: darken($nbs-cta-secondary, 10%),
+  800: darken($nbs-cta-secondary, 15%),
+  A200: #cdebf1,
+  A400: #51bacf,
+  A700: $nbs-cta-secondary,
+  contrast: (
+    500: $nbs-text-secondary,
+    600: $nbs-text-secondary,
+    700: $nbs-text-secondary,
+    800: $nbs-text-secondary,
+    900: $nbs-text-secondary,
+    A700: $nbs-text-secondary,
+  )
+);
+$nbs-map-add-failure: (
+  50: $white,
+  100: lighten($nbs-add-failure, 20%),
+  200: lighten($nbs-add-failure, 15%),
+  300: lighten($nbs-add-failure, 10%),
+  400: lighten($nbs-add-failure, 5%),
+  500: $nbs-add-failure,
+  600: darken($nbs-add-failure, 5%),
+  700: darken($nbs-add-failure, 10%),
+  800: darken($nbs-add-failure, 15%),
+  A200: #cdebf1,
+  A400: #51bacf,
+  A700: $nbs-add-failure,
+  contrast: (
+    500: $white,
+    600: $white,
+    700: $white,
+    800: $white,
+    900: $white,
+    A700: $white,
+  )
+);

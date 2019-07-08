@@ -1,0 +1,13 @@
+@mixin modal-setup {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  > * {
+    flex: 0 0 auto;
+  }
+}

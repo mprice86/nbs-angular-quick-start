@@ -1,0 +1,7 @@
+mat-icon {
+  &.mat-icon {
+    svg {
+      pointer-events: none;
+    }
+  }
+}

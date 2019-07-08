@@ -1,0 +1,95 @@
+<section class="constrain">
+	<h2 class="medium">
+		Chip variations
+	</h2>
+  <p>
+    Chips are compact elements that represent an input, attribute, or action.
+  </p>
+
+  <h3 class="medium">Usage</h3>
+  <p>
+    Chips allow users to enter information, make selections, filter content, or trigger actions. They can also be used to
+    represent compact, discrete pieces of information such as filters that have been applied to a search.
+  </p>
+
+  <h3 class="medium">Principles</h3>
+  <p>
+    <strong>Compact - </strong>Chips are compact components that represent discrete information.
+  </p>
+  <p>
+    <strong>Relevant - </strong>Chips should have a clear and helpful relationship to the content or task they represent.
+  </p>
+  <p>
+    <strong>Focused - </strong>Chips should make tasks easier to complete, or content easier to sort.
+  </p>
+
+  <h3 class="medium">Implementation</h3>
+  <p>
+    Typically 'mat-chip' elements are added inside a 'mat-chip-list' element.
+  </p>
+  <p>
+    By wrapping the 'mat-chip-list' in a 'mat-form-field' you can create a chip input field.
+  </p>
+
+  <h3 class="medium">Guidance</h3>
+  <p>
+    For more information on the Angular implementation of chips, see the <a href="https://material.angular.io/components/chips/overview">Angular Material chips article</a>.
+  </p>
+  <p>
+    For more information on the Material Design principles of chips see the <a href="https://material.io/design/components/chips.html">Material Design chips article</a>
+  </p>
+</section>
+
+<section class="constrain">
+	<article>
+		<h3 class="medium">Un-selected chips</h3>
+		<mat-chip-list>
+			<mat-chip color="primary" [selected]="false">Primary chip</mat-chip>
+			<mat-chip color="accent" [selected]="false">Secondary chip</mat-chip>
+		</mat-chip-list>
+	</article>
+
+	<article>
+		<h3 class="medium">Selected chips</h3>
+		<mat-chip-list>
+			<mat-chip color="primary" [selected]="true">Primary chip</mat-chip>
+			<mat-chip color="accent" [selected]="true">Secondary chip</mat-chip>
+		</mat-chip-list>
+	</article>
+
+	<article>
+		<h3 class="medium">Removable chips</h3>
+		<mat-chip-list>
+			<mat-chip color="primary" [removable]="true" [selected]="true">
+				Primary chip
+				<mat-icon matChipRemove svgIcon="fal:times"></mat-icon>
+			</mat-chip>
+			<mat-chip color="accent" [removable]="true" [selected]="true">
+				Secondary chip
+				<mat-icon matChipRemove svgIcon="fal:times"></mat-icon>
+			</mat-chip>
+		</mat-chip-list>
+	</article>
+</section>
+
+<section class="constrain">
+  <article>
+    <h3 class="medium">Chip input field</h3>
+    <mat-label>Add Uniclass codes</mat-label>
+    <mat-form-field appearance="outline">
+      <mat-chip-list #chipList>
+        <mat-chip *ngFor="let code of codes" color="primary" [selected]="true"
+              [removable]="true" (removed)="remove(code)">
+          {{code.code}}
+          <mat-icon matChipRemove svgIcon="fal:times"></mat-icon>
+        </mat-chip>
+
+        <input placeholder="New code..."
+            [matChipInputFor]="chipList"
+            [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+            [matChipInputAddOnBlur]="addOnBlur"
+            (matChipInputTokenEnd)="add($event)">
+      </mat-chip-list>
+    </mat-form-field>
+  </article>
+</section>

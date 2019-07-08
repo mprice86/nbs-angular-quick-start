@@ -1,0 +1,23 @@
+mat-chip {
+  &.mat-chip {
+    height: auto;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    border-radius: 2rem;
+
+    &.mat-standard-chip {
+      &.mat-primary,
+      &.mat-accent {
+        mat-icon {
+          &.mat-icon.mat-chip-remove {
+            width: .875rem;
+            height: .875rem;
+            font-size: .875rem;
+            line-height: .875rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

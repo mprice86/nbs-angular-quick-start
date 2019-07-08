@@ -1,0 +1,14 @@
+@import '../../../assets/styles/utilities/_utilities-styles.collection';
+
+:host {
+  @include tab-setup;
+}
+
+article {
+  margin: 3rem 0;
+}
+
+.menu-examples {
+  display: flex;
+  flex-flow: column;
+}
