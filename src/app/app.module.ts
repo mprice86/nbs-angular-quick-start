@@ -47,6 +47,6 @@ import { NbsExampleDialogComponent } from './examples/nbs-modals/nbs-example-dia
   entryComponents: [
     NbsExampleDialogComponent,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

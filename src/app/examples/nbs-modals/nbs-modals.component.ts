@@ -7,11 +7,11 @@ import { NbsExampleDialogComponent, ExampleDialogData } from './nbs-example-dial
 @Component({
   selector: 'nbs-modals',
   templateUrl: './nbs-modals.component.html',
-  styleUrls: ['./nbs-modals.component.scss']
+  styleUrls: ['./nbs-modals.component.scss'],
 })
 export class NbsModalsComponent {
   private exampleDialogData: ExampleDialogData;
-  
+
   constructor(
     public dialog: MatDialog,
     private snackBar: MatSnackBar,
@@ -30,7 +30,7 @@ export class NbsModalsComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.exampleDialogData = result;
-        this.snackBar.open(this.exampleDialogData.userName + ' chose ' + this.exampleDialogData.userFruit, 'OK');      
+        this.snackBar.open(this.exampleDialogData.userName + ' chose ' + this.exampleDialogData.userFruit, 'OK');
       }
     });
   }
