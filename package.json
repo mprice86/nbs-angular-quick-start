@@ -26,6 +26,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-ie": "ng serve --configuration es5",
     "build": "ng build",
     "test": "ng test",
     "sass-lint": "sass-lint -v -s scss -c .sass-lint.yml",
