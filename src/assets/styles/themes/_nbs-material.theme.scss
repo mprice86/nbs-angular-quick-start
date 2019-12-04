@@ -35,19 +35,15 @@ $nbs-theme-cta-secondary: mat-light-theme($nbs-cta-secondary-palette, $nbs-cta-p
 @include mat-checkbox-theme($nbs-theme-cta-secondary);
 
 // Define a custom typography config that overrides the font-family as well as the
-// `headlines` and `body-1` levels. 
-$nbs-typography: mat-typography-config(
-  $font-family: $nbs-font,
-
-  // we can optionally customise the font-size, line-height and font-weight of various component 'levels'
-  $headline: mat-typography-level(1.75rem, 1.5em, 600),
-  $title: mat-typography-level(1.25rem, 1.5em, 400),
-  $subheading-2: mat-typography-level(1.125rem, 1.5em, 400),
-  $subheading-1: mat-typography-level(1rem, 1.5em, 600),
-  $body-2: mat-typography-level(1rem, 1.5em, 400),
-  $body-1: mat-typography-level(1rem, 1.5em, 400),
-  $caption: mat-typography-level(.875rem, 1.25em, 400),
-  $button: mat-typography-level(1rem, 1rem, 400)
-);
+// `headlines` and `body-1` levels.
+$nbs-typography: mat-typography-config($font-family: $nbs-font,
+  $headline: mat-typography-level(1.875rem, 1.2em, $bold),
+  $title: mat-typography-level(1.5rem, 1.2em, $medium),
+  $subheading-2: mat-typography-level(1.25rem, 1.2em, $medium),
+  $subheading-1: mat-typography-level(1.125rem, 1.2em, $bold),
+  $body-2: mat-typography-level(1rem, 1.5em, $regular),
+  $body-1: mat-typography-level(1rem, 1.5em, $regular),
+  $caption: mat-typography-level(.875rem, 1.2em, $regular),
+  $button: mat-typography-level(1rem, 1rem, $regular));
 
 @include angular-material-typography($nbs-typography);

@@ -7,6 +7,7 @@ This basic app should provide all of the configuration, styles and components yo
 - ESLint
 - SASSLint
 - Packages
+- VSCode
 
 ### Assets
 - Custom Font Awesome iconsets

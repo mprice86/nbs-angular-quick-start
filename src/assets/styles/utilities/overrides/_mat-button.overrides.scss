@@ -2,6 +2,15 @@
 
 button {
   font-family: $nbs-font;
+  font-weight: $regular;
+  font-size: $nbs-font-size;
+  line-height: $nbs-line-height;
+  margin: 0;
+  padding: 1em 1.5em;
+  min-width: 0;
+  white-space: nowrap;
+  border: 0;
+  background-color: transparent;
 
   &.mat-raised-button {
     transition: box-shadow ease $speed-fast;
@@ -46,8 +55,8 @@ button {
     }
 
     &[disabled] {
-      color: fade-out($nbs-text-primary, .5) !important;
-      background-color: $nbs-utility-grey !important;
+      color: $nbs-text-disabled !important;
+      background-color: $nbs-cta-disabled !important;
     }
 
     &[ng-reflect-menu] {
