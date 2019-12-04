@@ -1,102 +1,87 @@
-h1 {
-  font-size: 1.75rem;
-  color: $nbs-brand-secondary;
-  font-weight: $bold;
-}
-
-h2 {
-  font-size: 1.25rem;
-  color: $nbs-text-primary;
-  font-weight: $regular;
-
-  &.medium {
-    font-weight: $medium;
-  }
-
-  &.bold {
+.mat-typography {
+  h1 {
+    font-size: 1.875rem;
     font-weight: $bold;
+    line-height: 1.2em;
+    color: $nbs-text-primary;
+    margin: 1em 0;
   }
-}
 
-h3 {
-  font-size: 1.125rem;
-  font-weight: $regular;
-  color: $nbs-text-primary;
-
-  &.medium {
+  h2 {
+    font-size: 1.5rem;
     font-weight: $medium;
+    line-height: 1.2em;
+    color: $nbs-text-primary;
+    margin: 1em 0;
+
+    &.regular {
+      font-weight: $regular;
+    }
+
+    &.bold {
+      font-weight: $bold;
+    }
   }
 
-  &.bold {
-    font-weight: $bold;
-  }
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: $bold;
-  color: $nbs-brand-secondary;
-}
-
-h5 {
-  font-size: 1rem;
-  font-weight: $medium;
-  color: $nbs-text-primary;
-}
-
-a {
-  color: $nbs-cta-primary;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-strong,
-.bold {
-  font-weight: 600;
-}
-
-blockquote {
-  display: block;
-  position: relative;
-  margin: 1rem auto;
-  padding: 0 0 0 1.875rem;
-  color: $nbs-brand-secondary;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  font-style: oblique;
-  font-weight: $regular;
-  border-left: 5px solid $nbs-brand-secondary;
-
-  p {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    color: $nbs-brand-secondary;
+  h3 {
     font-size: 1.25rem;
-    line-height: 1.875rem;
-    font-style: oblique;
-    font-weight: $regular;
-    border: 0;
+    font-weight: $medium;
+    line-height: 1.2em;
+    color: $nbs-text-primary;
+    margin: 1em 0;
+
+    &.regular {
+      font-weight: $regular;
+    }
+
+    &.bold {
+      font-weight: $bold;
+    }
   }
-}
 
-aside {
-  position: relative;
-  margin: 1rem 0;
-  padding: 2rem;
-  font-weight: $regular;
-  width: 100%;
-  max-width: 23rem;
-  border-left: 5px solid $nbs-cta-primary;
-  border-right: 5px solid $nbs-cta-primary;
-  font-size: .875rem;
-}
+  h4 {
+    font-size: 1.125rem;
+    font-weight: $bold;
+    line-height: 1.2em;
+    color: $nbs-text-primary;
+    margin: 1em 0;
+  }
 
-sub {
-  line-height: normal;
+  h5 {
+    font-size: 1rem;
+    font-weight: $medium;
+    line-height: 1.2em;
+    color: $nbs-text-primary;
+    margin: 1em 0;
+  }
+
+  .hint {
+    font-size: .6875rem;
+    color: fade-out($nbs-text-primary, .4);
+  }
+
+  a {
+    &:not(.mat-menu-item) {
+      color: $nbs-cta-primary;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:not(.button) {
+        &:focus {
+          background-color: $nbs-add-highlight;
+          color: $nbs-text-primary;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  strong,
+  .bold {
+    font-weight: $bold;
+  }
 }
